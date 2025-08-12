@@ -334,7 +334,7 @@ func main() {
 	params := os.Args[1:]
 
 	env := map[string]string{
-		"GO111MODULE": "on", // make sure we build in Module mode
+		"GO111MODULE": "off", // disable modules, so go version -m will not print dependency information
 		"GOOS":        runtime.GOOS,
 		"GOARCH":      runtime.GOARCH,
 		"GOARM":       "",
